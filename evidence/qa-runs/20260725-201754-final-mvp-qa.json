@@ -1,0 +1,109 @@
+﻿{
+    "runId":  "20260725-201754",
+    "generatedAt":  "2026-07-25T20:17:54.8361610-03:00",
+    "baseUrl":  "https://tesis-t85s.onrender.com",
+    "passed":  false,
+    "passedCount":  4,
+    "failedCount":  3,
+    "checks":  [
+                   {
+                       "name":  "Android compile and unit tests",
+                       "layer":  "android",
+                       "passed":  false,
+                       "durationMs":  65,
+                       "summary":  "exit 1",
+                       "details":  {
+                                       "command":  "E:\\1_nacho\\tesis\\gradlew.bat --no-daemon -Dkotlin.compiler.execution.strategy=in-process :app:compileDebugKotlin :app:testDebugUnitTest",
+                                       "stdout":  "\r\nE:\\1_nacho\\tesis\u003eif \"Windows_NT\" == \"Windows_NT\" setlocal\r\n\r\nE:\\1_nacho\\tesis\u003eset DIRNAME=E:\\1_nacho\\tesis\\ \r\n\r\nE:\\1_nacho\\tesis\u003eif \"E:\\1_nacho\\tesis\\\" == \"\" set DIRNAME=. \r\n\r\nE:\\1_nacho\\tesis\u003eset APP_BASE_NAME=gradlew \r\n\r\nE:\\1_nacho\\tesis\u003eset APP_HOME=E:\\1_nacho\\tesis\\ \r\n\r\nE:\\1_nacho\\tesis\u003efor %i in (\"E:\\1_nacho\\tesis\\\") do set APP_HOME=%~fi \r\n\r\nE:\\1_nacho\\tesis\u003eset APP_HOME=E:\\1_nacho\\tesis\\ \r\n\r\nE:\\1_nacho\\tesis\u003eset DEFAULT_JVM_OPTS=\"-Xmx64m\" \"-Xms64m\" \r\n\r\nE:\\1_nacho\\tesis\u003eif defined JAVA_HOME goto findJavaFromJavaHome \r\n\r\nE:\\1_nacho\\tesis\u003eset JAVA_HOME=C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.6.10-hotspot \r\n\r\nE:\\1_nacho\\tesis\u003eset JAVA_EXE=C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.6.10-hotspot/bin/java.exe \r\n\r\nE:\\1_nacho\\tesis\u003eif exist \"C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.6.10-hotspot/bin/java.exe\" goto execute \r\n\r\nE:\\1_nacho\\tesis\u003eecho.  1\u003e\u00262 \r\n\r\nE:\\1_nacho\\tesis\u003eecho ERROR: JAVA_HOME is set to an invalid directory: C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.6.10-hotspot  1\u003e\u00262 \r\n\r\nE:\\1_nacho\\tesis\u003eecho.  1\u003e\u00262 \r\n\r\nE:\\1_nacho\\tesis\u003eecho Please set the JAVA_HOME variable in your environment to match the  1\u003e\u00262 \r\n\r\nE:\\1_nacho\\tesis\u003eecho location of your Java installation.  1\u003e\u00262 \r\n\r\nE:\\1_nacho\\tesis\u003egoto fail \r\n\r\nE:\\1_nacho\\tesis\u003erem Set variable GRADLE_EXIT_CONSOLE if you need the _script_ return code instead of \r\n\r\nE:\\1_nacho\\tesis\u003erem the _cmd.exe /c_ return code! \r\n\r\nE:\\1_nacho\\tesis\u003eset EXIT_CODE=0 \r\n\r\nE:\\1_nacho\\tesis\u003eif 0 EQU 0 set EXIT_CODE=1 \r\n\r\nE:\\1_nacho\\tesis\u003eif not \"\" == \"\" exit 1 \r\n\r\nE:\\1_nacho\\tesis\u003eexit /b 1 \r\n",
+                                       "stderr":  " \r\nERROR: JAVA_HOME is set to an invalid directory: C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.6.10-hotspot \r\n \r\nPlease set the JAVA_HOME variable in your environment to match the \r\nlocation of your Java installation. \r\n"
+                                   }
+                   },
+                   {
+                       "name":  "Backend unit tests",
+                       "layer":  "backend",
+                       "passed":  false,
+                       "durationMs":  149,
+                       "summary":  "exit 1",
+                       "details":  {
+                                       "command":  "npm.cmd test",
+                                       "stdout":  "",
+                                       "stderr":  "node:internal/modules/cjs/loader:1451\r\n  throw err;\r\n  ^\r\n\r\nError: Cannot find module \u0027E:\\1_nacho\\tesis\\backend\\node_modules\\npm\\bin\\npm-prefix.js\u0027\r\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1448:15)\r\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)\r\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)\r\n    at Module._load (node:internal/modules/cjs/loader:1234:25)\r\n    at TracingChannel.traceSync (node:diagnostics_channel:328:14)\r\n    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)\r\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\r\n    at node:internal/main/run_main_module:33:47 {\r\n  code: \u0027MODULE_NOT_FOUND\u0027,\r\n  requireStack: []\r\n}\r\n\r\nNode.js v24.13.1\r\nnode:internal/modules/cjs/loader:1451\r\n  throw err;\r\n  ^\r\n\r\nError: Cannot find module \u0027E:\\1_nacho\\tesis\\backend\\node_modules\\npm\\bin\\npm-cli.js\u0027\r\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1448:15)\r\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)\r\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)\r\n    at Module._load (node:internal/modules/cjs/loader:1234:25)\r\n    at TracingChannel.traceSync (node:diagnostics_channel:328:14)\r\n    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)\r\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\r\n    at node:internal/main/run_main_module:33:47 {\r\n  code: \u0027MODULE_NOT_FOUND\u0027,\r\n  requireStack: []\r\n}\r\n\r\nNode.js v24.13.1\r\n"
+                                   }
+                   },
+                   {
+                       "name":  "Backend production build",
+                       "layer":  "backend",
+                       "passed":  false,
+                       "durationMs":  135,
+                       "summary":  "exit 1",
+                       "details":  {
+                                       "command":  "npm.cmd run build",
+                                       "stdout":  "",
+                                       "stderr":  "node:internal/modules/cjs/loader:1451\r\n  throw err;\r\n  ^\r\n\r\nError: Cannot find module \u0027E:\\1_nacho\\tesis\\backend\\node_modules\\npm\\bin\\npm-prefix.js\u0027\r\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1448:15)\r\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)\r\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)\r\n    at Module._load (node:internal/modules/cjs/loader:1234:25)\r\n    at TracingChannel.traceSync (node:diagnostics_channel:328:14)\r\n    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)\r\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\r\n    at node:internal/main/run_main_module:33:47 {\r\n  code: \u0027MODULE_NOT_FOUND\u0027,\r\n  requireStack: []\r\n}\r\n\r\nNode.js v24.13.1\r\nnode:internal/modules/cjs/loader:1451\r\n  throw err;\r\n  ^\r\n\r\nError: Cannot find module \u0027E:\\1_nacho\\tesis\\backend\\node_modules\\npm\\bin\\npm-cli.js\u0027\r\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1448:15)\r\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)\r\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)\r\n    at Module._load (node:internal/modules/cjs/loader:1234:25)\r\n    at TracingChannel.traceSync (node:diagnostics_channel:328:14)\r\n    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)\r\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\r\n    at node:internal/main/run_main_module:33:47 {\r\n  code: \u0027MODULE_NOT_FOUND\u0027,\r\n  requireStack: []\r\n}\r\n\r\nNode.js v24.13.1\r\n"
+                                   }
+                   },
+                   {
+                       "name":  "Render health",
+                       "layer":  "remote",
+                       "passed":  true,
+                       "durationMs":  417,
+                       "summary":  "HTTP 200",
+                       "details":  {
+                                       "method":  "GET",
+                                       "path":  "/api/v1/health",
+                                       "statusCode":  200,
+                                       "contentType":  "application/json; charset=utf-8",
+                                       "safeSummary":  {
+                                                           "status":  "ok",
+                                                           "version":  "0.1.0"
+                                                       }
+                                   }
+                   },
+                   {
+                       "name":  "Render Supabase health",
+                       "layer":  "remote",
+                       "passed":  true,
+                       "durationMs":  329,
+                       "summary":  "HTTP 200",
+                       "details":  {
+                                       "method":  "GET",
+                                       "path":  "/api/v1/health/supabase",
+                                       "statusCode":  200,
+                                       "contentType":  "application/json; charset=utf-8",
+                                       "safeSummary":  {
+                                                           "status":  "ok",
+                                                           "projectHost":  "rozbtrmvldvsjdudnmxo.supabase.co",
+                                                           "message":  null
+                                                       }
+                                   }
+                   },
+                   {
+                       "name":  "OpenAPI JSON contract",
+                       "layer":  "remote",
+                       "passed":  true,
+                       "durationMs":  339,
+                       "summary":  "HTTP 200",
+                       "details":  {
+                                       "method":  "GET",
+                                       "path":  "/api/v1/docs-json",
+                                       "statusCode":  200,
+                                       "contentType":  "application/json; charset=utf-8",
+                                       "safeSummary":  {
+                                                           "title":  "TenderApp Backend API",
+                                                           "version":  "0.1.0",
+                                                           "pathCount":  17
+                                                       }
+                                   }
+                   },
+                   {
+                       "name":  "Protected QA diagnostics",
+                       "layer":  "remote-qa",
+                       "passed":  true,
+                       "durationMs":  0,
+                       "summary":  "skipped: set TENDERAPP_QA_KEY to enable protected QA checks",
+                       "details":  {
+                                       "skipped":  true
+                                   }
+                   }
+               ]
+}
