@@ -1,5 +1,5 @@
----
-id: MVP-INCREMENT-004B
+﻿---
+id: Incremento 4
 title: Cierre funcional de flujo principal
 category: Implementation Planning
 version: 1.5.0
@@ -20,7 +20,7 @@ related:
   - BACKEND-USER-LOCATION-001
 ---
 
-# MVP-INCREMENT-004B - Cierre funcional de flujo principal
+# Incremento 4 - Cierre funcional de flujo principal
 
 ## Proposito
 
@@ -164,3 +164,5 @@ Este incremento aporta evidencia para explicar que el trabajo asistido por IA no
 | 0.3.0 | 2026-07-12 | Added BACKEND-WEATHER-LOCATION-001 as implemented dependency for effective household location sync. |
 | 0.2.0 | 2026-07-12 | Marked BACKEND-USER-LOCATION-001 as implemented and kept ANDROID-LOCATION-002 as next integration step. |
 | 0.1.0 | 2026-07-12 | Initial definition based on current system state and MVP closure gap analysis. |
+
+

@@ -1,4 +1,4 @@
-# Documentacion curada
+﻿# Documentacion curada
 
 La documentacion se organiza por responsabilidad:
 
@@ -8,3 +8,5 @@ La documentacion se organiza por responsabilidad:
 - `quality/`: criterios de aceptacion y puertas de revision.
 
 Los documentos operativos internos completos no se copian aqui; se conserva solo la evidencia necesaria para revisar TenderApp.
+
+

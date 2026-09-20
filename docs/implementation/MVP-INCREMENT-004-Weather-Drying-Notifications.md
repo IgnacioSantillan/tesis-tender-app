@@ -1,9 +1,9 @@
----
+﻿---
 id: MVP-INCREMENT-004
 title: Prediccion climatica, ubicaciones de secado y notificaciones automaticas
 category: Implementation Planning
 version: 1.1.0
-status: Draft
+status: Curated
 language: Spanish
 author: Juan Santillan
 created: 2026-07-11
@@ -151,3 +151,5 @@ Tambien aporta evidencia para describir el metodo de trabajo incremental asistid
 | 0.3.0 | 2026-07-11 | Marked DOMAIN-LOCATION-001 as implemented with controlled drying locations and Supabase migration. |
 | 0.2.0 | 2026-07-11 | Marked WEATHER-PRED-001 as implemented with prediction-ready weather contract additions. |
 | 0.1.0 | 2026-07-11 | Initial formal definition of MVP Increment 4 focused on weather prediction, drying locations and automatic notifications. |
+
+

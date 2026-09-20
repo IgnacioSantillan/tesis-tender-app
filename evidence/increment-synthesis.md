@@ -1,4 +1,4 @@
-# Sintesis incremental y Kanban de TenderApp
+﻿# Sintesis incremental y Kanban de TenderApp
 
 Estado: version curada para revision academica.
 
@@ -61,3 +61,5 @@ Una capacidad implementada no se presenta automaticamente como validada. La tesi
 - Observar en ejecucion diferida un evento vencido del scheduler.
 - Mantener como trabajo futuro la calibracion con tiempos reales de secado.
 - Ejecutar las verificaciones que requieran credenciales, Firebase o Supabase en un entorno configurado.
+
+

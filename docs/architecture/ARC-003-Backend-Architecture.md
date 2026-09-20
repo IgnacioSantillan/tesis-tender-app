@@ -1,16 +1,15 @@
----
+﻿---
 id: ARC-003
 title: Backend Architecture
 category: Architecture Description
-version: 0.1.0
-status: Draft
+version: 1.0.0
+status: Curated
 language: English
 author: Juan Santillán
 created: 2026-07-05
 updated: 2026-07-05
 tags: []
 related: ['ADR-004', 'REQ-001', 'REQ-003']
-consumers: ['BACKEND-000', 'API-000']
 ---
 
 # Backend Architecture
@@ -18,10 +17,6 @@ consumers: ['BACKEND-000', 'API-000']
 ## Purpose
 
 Define the backend role, boundaries and initial module structure for TenderApp.
-
-## Educational Layer
-
-A backend-for-frontend or application backend can isolate the mobile app from infrastructure details, centralize security, expose stable APIs and coordinate third-party services.
 
 ## TenderApp Adaptation
 
@@ -31,9 +26,9 @@ TenderApp will use a simple backend, preferably NestJS, acting as the mobile API
 
 The backend should remain intentionally small. It must not become a complex microservice architecture. Express is acceptable if simplicity wins, but NestJS is preferred for modularity and TypeScript consistency.
 
-## AI Guidance
+## Increment and Kanban Context
 
-When generating backend code, AI agents must avoid exposing service role keys to the client, must preserve API boundaries and must generate OpenAPI-compatible contracts when possible.
+The backend evolves through five increments: foundation and health checks in Increment 1; authenticated household configuration in Increment 2; loads, weather and prediction in Increment 3; state changes and notification automation in Increment 4; and integration, regression and evidence closure in Increment 5. Work is reviewed through the shared Kanban states and remains within the declared MVP scope.
 
 ## Traceability
 
@@ -49,8 +44,10 @@ Supports REQ-001, REQ-003, REQ-005, REQ-006 and ADR-004.
 
 ## Open Questions
 
-- To be reviewed by Juan during the FR2 review cycle.
+- To be reviewed against the curated five-increment Kanban baseline.
 
 ## Changelog
 
-- 0.1.0 (2026-07-05): Initial FR2 draft.
+- 1.0.0 (2026-09-19): Curated for the five-increment Kanban baseline and academic review.
+
+

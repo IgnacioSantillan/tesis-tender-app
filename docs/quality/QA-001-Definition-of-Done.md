@@ -1,9 +1,9 @@
----
+﻿---
 id: QA-001
 title: Definition of Done
 category: Quality Standard
 version: 0.1.0
-status: Draft
+status: Curated
 language: English
 author: Juan Santillán
 created: 2026-07-05
@@ -17,10 +17,6 @@ related: ['TEST-000', 'TEST-003']
 ## Purpose
 
 Define when a task can be considered complete.
-
-## Educational Layer
-
-A Definition of Done is a shared quality agreement. It prevents partially completed work from being treated as finished.
 
 ## TenderApp Definition of Done
 
@@ -54,3 +50,5 @@ Consumes TEST-000 to TEST-003, GOV-003 and EDS lifecycle. Used by the implementa
 | Version | Date | Change |
 |---|---|---|
 | 0.1.0 | 2026-07-05 | Initial Definition of Done. |
+
+

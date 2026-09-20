@@ -1,4 +1,4 @@
----
+﻿---
 id: QA-003
 title: Implementation Review Gate
 category: Quality Assurance
@@ -39,3 +39,5 @@ Before closing a capability, verify:
 ## Human review
 
 The final acceptance of a capability remains a human responsibility. Automated checks support the decision but do not replace inspection of scope, evidence or limitations.
+
+

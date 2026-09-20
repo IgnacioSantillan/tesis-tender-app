@@ -1,4 +1,4 @@
-# Evidencia visual v8 - plan de finalización
+﻿# Evidencia visual v8 - plan de finalización
 
 ## Propósito
 
@@ -29,3 +29,5 @@ Registrar en un dispositivo Android real la corrección `PRED-TIMELINE-CONSISTEN
 **Nota.** Captura de pantalla de TenderApp correspondiente al plan de finalización de una carga. La interfaz distingue el tiempo de lavado, la espera hasta una ventana meteorológica conveniente y el secado estimado antes de informar la hora de finalización. Fuente: elaboración propia.
 
 La fuente del manuscrito y el generador integran esta evidencia como Figura 2. El archivo fue recuperado sin transformaciones desde la imagen original aportada por el autor y no contiene datos personales visibles.
+
+

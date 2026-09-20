@@ -1,4 +1,4 @@
----
+﻿---
 id: MVP-INCREMENT-005
 title: Prediccion energetica, centrifugado y costo aproximado
 category: Implementation Planning
@@ -168,3 +168,5 @@ La aplicacion se mantiene acotada, pero el caso de uso gana valor conceptual por
 | 0.3.0 | 2026-07-12 | Marked ANDROID-ENERGY-001 as implemented with Android energy-aware models, DTOs, mappers and tests. |
 | 0.2.0 | 2026-07-12 | Marked BACKEND-ENERGY-002 as implemented with energy-aware prediction calculator and tests. |
 | 0.1.0 | 2026-07-12 | Initial Increment 5 definition for energy-aware prediction, spin speed and approximate cost. |
+
+

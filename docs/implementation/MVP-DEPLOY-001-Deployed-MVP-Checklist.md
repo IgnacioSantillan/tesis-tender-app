@@ -1,4 +1,4 @@
----
+﻿---
 id: MVP-DEPLOY-001
 title: Deployed MVP Checklist
 category: MVP Checklist
@@ -77,3 +77,5 @@ Date: 2026-07-08.
 - Next pending: screenshot capture for thesis evidence (ANDROID-VISUAL-001 / MVP-DEMO evidence package).
 - 2026-07-10: Real push notification runbook prepared in `docs/09-implementation/integration/QA-PUSH-001-Real-Push-Smoke-Test.md`. Execution remains pending because it requires deployed `BACKEND-PUSH-003`, Firebase Admin credentials in Render, a signed-in Android device and redacted evidence capture.
 - Render free-tier cold start must be considered during smoke validation: the first request after inactivity can be slow and should not be misclassified as a backend failure until health checks are retried after the instance wakes.
+
+

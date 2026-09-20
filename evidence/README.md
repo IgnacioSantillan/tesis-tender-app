@@ -1,4 +1,4 @@
-# Evidencia
+﻿# Evidencia
 
 Este directorio almacenara evidencia usada por la tesis final.
 
@@ -28,3 +28,5 @@ Toda evidencia debe indicar fecha, origen, artefacto relacionado y capitulo dond
 ## Uso recomendado para redaccion
 
 Para redactar o regenerar la tesis, usar primero `increment-synthesis.md` como mapa de lectura y luego volver a `increment-log.md` solo cuando haga falta citar una tarea, verificacion o pendiente especifico.
+
+

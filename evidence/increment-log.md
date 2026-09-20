@@ -1,4 +1,4 @@
-# Bitacora de evidencia incremental
+﻿# Bitacora de evidencia incremental
 
 Este archivo registra tareas representativas y evidencia verificable del desarrollo de TenderApp. La organizacion sigue cinco incrementos de valor y un flujo Kanban adaptado.
 
@@ -101,3 +101,5 @@ Las unidades de trabajo recorren los estados `Detectado`, `Priorizado`, `En desa
 ## Criterio de cierre
 
 Una unidad se considera cerrada cuando el cambio esta integrado, su verificacion esta registrada, la evidencia puede ser revisada y sus limites permanecen explicitados. Las tareas pendientes se conservan como pendientes y no se presentan como validaciones concluidas.
+
+

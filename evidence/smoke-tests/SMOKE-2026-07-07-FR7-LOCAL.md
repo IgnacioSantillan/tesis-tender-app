@@ -1,4 +1,4 @@
-# SMOKE-2026-07-07-FR7-LOCAL
+﻿# SMOKE-2026-07-07-FR7-LOCAL
 
 Fecha: 2026-07-07.
 
@@ -54,3 +54,5 @@ Nota. La tabla registra controles locales ejecutados sin exponer secretos ni tok
 
 - Capítulo 4: evidencia de integración local Android/backend/Supabase.
 - Capítulo 5: evidencia para analizar límites de automatización, trazabilidad y validación incremental antes del despliegue público.
+
+

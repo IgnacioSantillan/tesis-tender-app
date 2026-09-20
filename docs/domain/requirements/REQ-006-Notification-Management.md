@@ -1,9 +1,9 @@
----
+﻿---
 id: REQ-006
 title: Notification Management
 category: Functional Requirement
 version: 0.1.0
-status: Draft
+status: Curated
 language: English
 author: Juan Santillán
 created: 2026-07-05
@@ -22,16 +22,6 @@ related:
 
 Define a functional requirement for TenderApp: Notification Management.
 
-## Educational Layer
-
-### What is this artifact?
-
-A functional requirement specifies a behavior that the system must provide to satisfy user or stakeholder needs.
-
-### Why is it used?
-
-Requirements create a contract between problem analysis, architecture, implementation, tests, and thesis validation.
-
 ## TenderApp Adaptation
 
 The system shall notify users about key events such as ideal hanging time, drying completion, or rain risk.
@@ -39,10 +29,6 @@ The system shall notify users about key events such as ideal hanging time, dryin
 ## Engineering Notes
 
 Rationale: Notifications convert predictions into timely action.
-
-## AI Guidance
-
-AI agents must not implement this requirement unless related use cases, business rules, and acceptance criteria are also considered.
 
 ## Traceability
 
@@ -60,3 +46,5 @@ Will be linked to UC, BR, UI, API, DB, and TEST artifacts in later releases.
 ## Changelog
 
 - 0.1.0: Initial FR1 draft.
+
+

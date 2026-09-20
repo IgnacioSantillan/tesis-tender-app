@@ -1,4 +1,4 @@
-# SMOKE-2026-07-07-FR7-RENDER
+﻿# SMOKE-2026-07-07-FR7-RENDER
 
 Fecha: 2026-07-07.
 
@@ -57,3 +57,5 @@ El backend público está desplegado y responde tanto el health check básico co
 
 - Capítulo 4: evidencia de primer despliegue público backend y actualización Android hacia URL real.
 - Capítulo 5: evidencia de brecha entre smoke local exitoso y despliegue remoto parcial.
+
+

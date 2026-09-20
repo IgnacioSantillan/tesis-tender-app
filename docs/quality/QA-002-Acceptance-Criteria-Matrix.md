@@ -1,9 +1,9 @@
----
+﻿---
 id: QA-002
 title: Acceptance Criteria Matrix
 category: Quality Matrix
 version: 0.6.0
-status: Draft
+status: Curated
 language: English
 author: Juan Santillán
 created: 2026-07-05
@@ -43,10 +43,6 @@ Map MVP backlog items to acceptance criteria.
 | PB-023 | Prediction supports controlled spin speed, load size, washer efficiency and approximate washing cost; missing values fall back safely; Dashboard can infer washer metadata from user-owned loads; tests and evidence document the heuristic nature of the result. |
 | PB-024 | User can select when clothes must be ready; backend evaluates QUICK, DELICATE, NORMAL and ECO using washing plus weather-based drying time; each alternative exposes finish time, margin and feasibility; only feasible alternatives are recommended; invalid targets and stale UI responses are handled. |
 
-## AI Guidance
-
-AI agents must cite the relevant acceptance criteria when claiming a task is complete.
-
 ## Traceability
 
 Consumes BACKLOG-001 and QA-001. Supports review and thesis evidence.
@@ -70,3 +66,5 @@ Consumes BACKLOG-001 and QA-001. Supports review and thesis evidence.
 | 0.3.0 | 2026-07-11 | Added PB-020 and PB-021 acceptance criteria for real push and Increment 4 validation. |
 | 0.2.0 | 2026-07-09 | Expanded notification acceptance criteria and added PB-019 automation validation. |
 | 0.1.0 | 2026-07-05 | Initial acceptance matrix. |
+
+

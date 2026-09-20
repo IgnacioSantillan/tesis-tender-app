@@ -1,4 +1,4 @@
----
+﻿---
 id: QA-005
 title: MVP Deployment Review Gate
 category: Quality Gate
@@ -111,3 +111,5 @@ The following items are pending and must be resolved or explicitly accepted as k
 | 1.2.0 | 2026-07-09 | Recorded successful manual Android MVP smoke test and closed seed/test-user verification items for MVP demo scope. |
 | 1.1.0 | 2026-07-08 | Expanded checklist with current verification state; added Verification Notes, Open Items, and Changelog sections. |
 | 1.0.0 | 2026-07-06 | Original gate definition. |
+
+
