@@ -64,7 +64,7 @@ Date: 2026-07-08.
 
 - Android UI prototype evidence checklist was prepared in `docs/09-implementation/android/ANDROID-UI-008-UI-Evidence-Package.md`.
 - Deployed smoke baseline was attempted in `docs/09-implementation/integration/INTEGRATION-EVIDENCE-001-Deployed-Smoke-Baseline.md`.
-- Render public endpoints were not reachable from the local Codex shell during this attempt.
+- Render public endpoints were not reachable from the local verification shell during this attempt.
 - Browser evidence provided by the thesis author confirms `/api/v1/health` and `/api/v1/health/supabase` return safe success responses.
 - Android manual validation confirms the app reaches the public backend.
 - The MVP schema migration `supabase/migrations/001_initial_schema.sql` was applied manually in Supabase SQL Editor after the `NOT VALID` constraint adjustment.

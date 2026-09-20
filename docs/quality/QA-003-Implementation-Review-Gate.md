@@ -2,52 +2,40 @@
 id: QA-003
 title: Implementation Review Gate
 category: Quality Assurance
-version: 0.1.0
-status: Draft
+version: 1.0.0
+status: Curated
 language: English
 project: TenderApp
-thesis_title: Diseño estructural de documentación de ingeniería para el desarrollo asistido por inteligencia artificial, aplicado a un caso de uso: TenderApp
-created: 2026-07-05
-updated: 2026-07-05
 ---
 
-# QA-003 — Implementation Review Gate
+# QA-003 - Implementation Review Gate
 
-## What is this document?
+## Purpose
 
-This document defines the review gate that every AI-assisted implementation task must pass before being considered complete.
+This review gate determines whether a TenderApp capability can move from implemented to validated and documented.
 
-## Why is it used?
+## Review checklist
 
-The project uses AI assistance, but quality responsibility remains human. A review gate prevents uncontrolled code generation and preserves traceability.
+Before closing a capability, verify:
 
-## Required Review Checklist
+- The capability belongs to one of the five approved increments.
+- The scope and acceptance criteria are identifiable.
+- The implementation respects the Android, backend and data boundaries.
+- The Android project or backend test slice builds when the environment is configured.
+- Automated tests, smoke tests or manual checks are recorded according to the risk.
+- No secrets, personal data or local-only files are included in the evidence.
+- The interface, API contract, persistence and domain state remain coherent.
+- Known limitations and pending observations are stated explicitly.
+- The evidence can be linked to the implementation and the corresponding increment.
 
-Before approval, verify:
+## Evidence states
 
-- The task maps to an approved sprint.
-- Codex listed the files it read.
-- The implementation follows AGENTS.md and CONTEXT documents.
-- The task is small and reviewable.
-- The Android project builds or build failure is explained.
-- No unrelated files were rewritten.
-- No unapproved libraries were added.
-- UI code does not contain business logic.
-- ViewModel exposes state through StateFlow where applicable.
-- Repository pattern is respected for data access.
-- Documentation is updated if architecture changed.
+- Pending: scope identified but not implemented.
+- Implemented: code or configuration exists.
+- Validated: a relevant check was executed and recorded.
+- Documented: evidence and limitations are available for review.
+- Closed: the capability is complete within the declared MVP scope.
 
-## Approval States
+## Human review
 
-- Pending Review
-- Approved
-- Changes Requested
-- Rejected
-
-## AI Guidance
-
-Codex must report against this checklist after each implementation task.
-
-## Changelog
-
-- 0.1.0 — Initial review gate.
+The final acceptance of a capability remains a human responsibility. Automated checks support the decision but do not replace inspection of scope, evidence or limitations.

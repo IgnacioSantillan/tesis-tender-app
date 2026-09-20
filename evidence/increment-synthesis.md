@@ -1,108 +1,63 @@
-# Síntesis incremental para redacción de tesis
+# Sintesis incremental y Kanban de TenderApp
 
-Estado: borrador vivo.
-
-Última actualización: 2026-07-12.
+Estado: version curada para revision academica.
 
 ## Proposito
 
-Este archivo resume la bitácora extensa de `increment-log.md` para que la tesis pueda redactarse y regenerarse sin releer manualmente cada tarea. No reemplaza la bitácora: la sintetiza por incremento de valor, evidencia disponible, capítulos afectados y pendientes.
+Este archivo resume el desarrollo de TenderApp mediante cinco incrementos de valor y un flujo Kanban adaptado. Relaciona objetivos, trabajo realizado, evidencia y pendientes sin sustituir el historial detallado de tareas.
 
-## Regla de uso
+## Modelo de trabajo
 
-- Usar `increment-log.md` como evidencia primaria.
-- Usar este archivo como índice narrativo para los capítulos de metodología, desarrollo, validación y resultados.
-- No afirmar validaciones que no estén registradas en la bitácora, capturas, smoke tests, logs o evidencia manual.
-- Marcar como pendiente todo aquello que todavía no tenga captura, test, smoke test o confirmación humana.
+El desarrollo se organizo como un flujo Kanban de trabajo limitado y visible:
 
-## Mapa de incrementos
+1. Detectado: se identifica una necesidad, brecha o riesgo.
+2. Priorizado: se define el alcance y el criterio de aceptacion.
+3. En desarrollo: se ajustan codigo, datos, contratos o interfaz.
+4. Implementado: el cambio queda integrado.
+5. Validado: se ejecuta prueba automatizada, smoke test o comprobacion manual.
+6. Documentado: se registra la evidencia y el pendiente correspondiente.
+7. Cerrado: la unidad queda vinculada con su incremento de valor.
 
-Tabla 1
-Incrementos de valor del desarrollo de TenderApp
+Cada incremento contiene actividades de especificacion, diseno, implementacion, verificacion y registro de evidencia. Los incrementos son entregas acumulativas orientadas a valor, gestionadas mediante el flujo Kanban descrito en este documento.
 
-| Incremento | Objetivo de valor | Evidencia primaria | Estado para tesis |
+## Cinco incrementos de valor
+
+| Incremento | Objetivo de valor | Resultado principal | Evidencia disponible |
 |---|---|---|---|
-| Incremento 1 - Base documental, arquitectura y backlog | Dejar una base controlada para construir TenderApp con trazabilidad. | FR0-FR6, backlog, planes de sprint, arquitectura, dominio, prompts, agentes y calidad. | Usar en metodologia y consideraciones de desarrollo. |
-| Incremento 2 - App Android inicial y autenticacion | Permitir acceso de usuario, navegacion principal y primera experiencia app-first. | Tareas Android foundation, UI mock, Supabase Auth, deep links, login, registro y recuperacion. | Usar en desarrollo de cliente movil y validacion de autenticacion. |
-| Incremento 3 - Backend, Supabase y datos del dominio | Persistir y recuperar lavarropas, cargas e historial mediante backend REST. | Skeleton NestJS, health, Supabase boundary, washers, laundry-loads, Retrofit, historial y nueva carga. | Usar en arquitectura cliente-servidor y datos persistidos. |
-| Incremento 4 - Clima, ubicaciones, prediccion y push | Convertir clima real y estado de carga en recomendacion y notificaciones. | Open-Meteo, ubicaciones de secado, prediccion backend, heuristica documentada, Firebase/FCM, notification_events y Render. | Usar como nucleo funcional del MVP defendible. |
-| Incremento 4B - Cierre funcional del flujo principal | Recorrer end-to-end configuracion, clima, prediccion, carga, estado, notificacion e historial. | Settings location sync, Dashboard real, New Load prediction preview, status update, discard load, retiro de lavarropas con historial preservado, cierre de carga/guardar ropa y screenshots v3/v4. | Usar como cierre funcional validado del MVP principal; capturas por estado quedan como refuerzo visual recomendado. |
-| Incremento 5 - Prediccion energetica y costo aproximado | Ampliar la recomendacion con eficiencia del lavarropas, centrifugado, tamano de carga y costo/consumo heuristico. | Migracion de campos energeticos, DTOs backend, calculadora, UI Android, screenshots v5 y validacion visual Android del costo aproximado. | Usar como extension MVP implementada y validada visualmente; evidencia Thunder/JSON queda como refuerzo opcional. |
+| Incremento 1. Preparacion tecnica y tecnologica | Establecer una base integrada y verificable para construir el producto. | Arquitectura, dominio inicial, proyecto Android, backend, persistencia inicial y criterios de calidad. | Codigo base, arquitectura, modelo de dominio, configuracion de build y reglas de calidad. |
+| Incremento 2. Acceso y configuracion del entorno domestico | Permitir que una persona acceda y configure el contexto donde utilizara TenderApp. | Registro, inicio de sesion, recuperacion, sesion, hogar, ubicaciones de secado y lavarropas. | Implementacion Android/backend, contratos de autenticacion, configuracion de ubicacion y pruebas de sesion. |
+| Incremento 3. Gestion de cargas y recomendacion meteorologica | Transformar datos de carga y clima en una orientacion accionable. | Cargas, historial, clima, prediccion heuristica, ventanas horarias, consumo aproximado y planificacion por hora objetivo. | Calculadoras, pruebas deterministas, endpoints, migraciones y pantallas de Dashboard y Nueva carga. |
+| Incremento 4. Seguimiento y automatizacion | Acompanar el ciclo de la carga y avisar cuando corresponde actuar. | Estados, progreso, historial operativo, FCM, permisos, eventos auditados, scheduler y localizacion. | Pruebas de notificaciones, eventos de auditoria, smoke tests y capturas v7. |
+| Incremento 5. Integracion, validacion y cierre | Verificar el MVP completo y preparar evidencia defendible. | Regresion, escenarios controlados, correcciones, evidencia consolidada y guia de revision. | QA final, pruebas Android/backend, capturas v7/v8, smoke tests y este repositorio curado. |
 
-Nota. La tabla sintetiza el avance incremental del caso TenderApp a partir de la bitácora de evidencia. Fuente: elaboración propia.
+## Evidencia por etapa del trabajo
 
-## Actividades recurrentes por incremento
-
-Cada incremento repitió un ciclo técnico semejante:
-
-1. Selección de backlog o brecha detectada por QA.
-2. Lectura de contexto documental y criterios de aceptación.
-3. Ajuste de diseño, contrato, modelo o interfaz según el alcance.
-4. Implementación pequeña y revisable.
-5. Verificación automatizada cuando fue factible.
-6. Validación manual cuando el flujo dependió de dispositivo, Supabase, Render, Firebase u Open-Meteo.
-7. Registro de evidencia, pendientes y uso previsto en la tesis.
-
-Esta estructura debe presentarse como desarrollo incremental de duración variable, no como Scrum estricto de sprints idénticos.
+| Etapa Kanban | Pregunta de control | Evidencia |
+|---|---|---|
+| Detectado | Que brecha o necesidad se identifico? | Bitacora incremental y requisitos. |
+| Priorizado | Que alcance se aprobo para el incremento? | Criterios de aceptacion y documentos de implementacion. |
+| En desarrollo | Que componentes se modificaron? | Codigo Android, backend y migraciones. |
+| Validado | Como se comprobo el resultado? | Pruebas, smoke tests, build, capturas o registros manuales. |
+| Documentado | Que se puede revisar? | `evidence/`, documentacion tecnica y guia de revision. |
+| Cerrado | Que limite permanece? | QA final y pendientes declarados. |
 
 ## Evidencia por capitulo
 
-Tabla 2
-Relación entre capítulos de tesis y evidencia disponible
-
-| Capitulo de tesis | Evidencia recomendada |
+| Capitulo | Evidencia recomendada |
 |---|---|
-| Introduccion | Alcance MVP, problema cotidiano de secado, objetivo general y objetivos especificos. |
-| Marco teorico | Android, Compose, Kotlin, arquitectura cliente-servidor, API REST, Supabase, Open-Meteo, fundamentos climaticos de evaporacion, Firebase, Render, calidad y desarrollo incremental. |
-| Metodologia | FR0-FR6, CODEX_LOOP, task packs, prompts, agentes, aprobacion humana, bitacora incremental. |
-| Consideraciones para el desarrollo del software | Arquitectura Android MVVM, navegación Compose, trazabilidad Android-backend, contrato Swagger/OpenAPI, backend NestJS, repositorios, Supabase schema, seguridad de secretos, RLS, despliegue y localizacion. |
-| Desarrollo e implementacion | Incrementos 1 a 5 con tareas principales, decisiones y resultados. |
-| Validacion y resultados | Tests Android/backend, builds, smoke tests, capturas v1-v5, logs Render, Supabase `notification_events`, recepcion push, QA manual. |
-| Conclusiones | Alcance logrado, limitaciones, deuda tecnica controlada y trabajos futuros. |
+| Introduccion | Problema de decision de secado, alcance y objetivos. |
+| Marco teorico | Android, Compose, API REST, Supabase, clima, prediccion, notificaciones y calidad. |
+| Metodologia | Flujo Kanban, cinco incrementos, criterios de aceptacion y bitacora. |
+| Desarrollo e implementacion | Codigo, migraciones, contratos y decisiones de arquitectura. |
+| Validacion y resultados | Pruebas, builds, smoke tests, capturas, logs y eventos auditados. |
+| Conclusiones | Alcance logrado, limitaciones, pendientes y trabajos futuros. |
 
-Nota. La tabla orienta la redacción de capítulos y no reemplaza la verificación puntual de cada evidencia. Fuente: elaboración propia.
+## Criterio de interpretacion
 
-## Evidencia visual disponible
+Una capacidad implementada no se presenta automaticamente como validada. La tesis debe distinguir entre codigo existente, prueba automatizada, observacion manual y evidencia visual. La prediccion de secado es heuristica y orientativa; las pruebas demuestran consistencia interna y no precision fisica del tiempo de secado.
 
-- `screenshots/v1`: primer prototipo simple de dashboard, nueva carga, historial y ajustes.
-- `screenshots/v2`: flujo visual más completo con login, registro, recuperación, nueva carga, historial, ajustes y notificaciones.
-- `screenshots/v3`: dashboard con backend/Open-Meteo, nueva carga con desplegables, historial actualizable, settings y lavarropas.
-- `screenshots/v4`: dashboard con mensajes dinámicos y recomendación ligada a estado.
+## Pendientes declarados
 
-Actualizacion 2026-07-13: `screenshots/v5` agrega evidencia del incremento energetico: dashboard con costo aproximado, nueva carga con centrifugado/tamano y ajustes de lavarropas con metadata energetica. La captura `01-v5-dashboard-electricity-new.png` fue validada visualmente por el autor como evidencia de llegada de datos energeticos y cambios en la prediccion de gasto electrico aproximado.
-
-## Fuentes externas ya registradas
-
-- Android Developers: arquitectura Android, Compose, Material 3, localizacion, criptografia y permiso runtime de notificaciones.
-- JetBrains: Kotlin.
-- Supabase: Auth, sign up, sign in, reset password y redirect URLs.
-- NestJS: backend modular y API REST.
-- Firebase: Cloud Messaging Android y Admin SDK.
-- Open-Meteo: API meteorológica.
-- FAO 56: variables meteorologicas relevantes para procesos de evaporacion y evapotranspiracion.
-- Render: despliegue y cold start/free spin down.
-- APA 7, ISO/IEC/IEEE 42010, ISO/IEC/IEEE 29148 e ISO/IEC 25010 como soporte académico y de calidad.
-
-## Pendientes antes de una version de tesis amplia
-
-- Expandir el manuscrito fuente `tesis-final/tesis-tenderapp-app.md` hacia una version de aproximadamente 12.000 a 15.000 palabras si se busca un documento cercano a 50 paginas reales.
-- Convertir algunos diagramas Mermaid de `docs/12-assets/diagrams/thesis` en imágenes si el documento final exige diagramas renderizados y no solo código fuente.
-- Revisar capturas para ocultar datos personales o tokens visibles antes de anexarlas definitivamente.
-- Opcional: sumar capturas del Dashboard por estado de carga para reforzar anexos visuales del cierre funcional.
-- Decidir la etiqueta final de UX para cierre de carga en la tesis: `ropa lista`, `retirar ropa` o `guardar ropa`.
-- Opcional: agregar respuesta Thunder/JSON redactada de prediccion energetica si se desea reforzar anexos tecnicos.
-
-## Proximo uso recomendado
-
-El generador `generar_tesis_tenderapp.py` deberia consumir este archivo como resumen narrativo adicional, junto con:
-
-- `tesis-final/tesis-tenderapp-app.md`
-- `tesis-final/evidence/increment-log.md`
-- `tesis-final/evidence/screenshots/README.md`
-- `tesis-final/references/technical-source-map.md`
-- `docs/03-research/literature/bibliography.bib`
-- `docs/12-assets/diagrams/thesis/`
-- `docs/04-architecture/ARC-008-Android-Backend-Navigation-Traceability.md`
-- `docs/09-implementation/backend/DOCS-BACKEND-OPENAPI-001-Swagger-OpenAPI-Contract-Documentation.md`
-- `docs/05-domain/algorithms/ALG-001-Drying-Recommendation-Heuristic.md`
-- `tesis-output/TenderApp-Tesis-UCASAL-Adaptada.md`
+- Observar en ejecucion diferida un evento vencido del scheduler.
+- Mantener como trabajo futuro la calibracion con tiempos reales de secado.
+- Ejecutar las verificaciones que requieran credenciales, Firebase o Supabase en un entorno configurado.

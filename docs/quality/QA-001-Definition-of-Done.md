@@ -35,13 +35,9 @@ A task is done only when:
 - Traceability to backlog/requisites is maintained.
 - Human review has been completed.
 
-## AI Guidance
-
-AI agents must output a DoD checklist with each coding response.
-
 ## Traceability
 
-Consumes TEST-000 to TEST-003, GOV-003 and EDS lifecycle. Used by CODEX-001 and all implementation tasks.
+Consumes TEST-000 to TEST-003, GOV-003 and EDS lifecycle. Used by the implementation and review process.
 
 ## References
 
