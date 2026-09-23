@@ -7,13 +7,15 @@ Este repositorio contiene una seleccion curada del codigo, la documentacion y la
 ## Recorrido recomendado
 
 1. Leer `README.md` para conocer el alcance y las exclusiones.
-2. Revisar `docs/architecture/` para la separacion Android, backend y persistencia.
-3. Revisar `docs/domain/` para reglas y requisitos del caso de uso.
-4. Consultar `app/` y `backend/` para la implementacion.
-5. Consultar `supabase/migrations/` para la evolucion del esquema.
-6. Consultar `evidence/increment-log.md` para la bitacora de tareas.
-7. Consultar `evidence/qa-runs/` y `evidence/smoke-tests/` para las verificaciones.
-8. Consultar `evidence/screenshots/v7/` y `evidence/screenshots/v8/` para el resultado visual seleccionado.
+2. Revisar `docs/kanban/KANBAN-BOARD.md` para el estado de los cinco incrementos.
+3. Revisar `docs/quality/QA-EXECUTION-PLAN.md` para controles y pendientes.
+4. Revisar `docs/architecture/` para la separacion Android, backend y persistencia.
+5. Revisar `docs/domain/` para reglas y requisitos del caso de uso.
+6. Consultar `app/` y `backend/` para la implementacion.
+7. Consultar `supabase/migrations/` para la evolucion del esquema.
+8. Consultar `evidence/increment-log.md` para la bitacora resumida.
+9. Consultar `evidence/qa-runs/` y `evidence/smoke-tests/` para las verificaciones.
+10. Consultar `evidence/screenshots/v7/` y `evidence/screenshots/v8/` para el resultado visual seleccionado.
 
 ## Limitaciones declaradas
 

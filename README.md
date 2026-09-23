@@ -8,7 +8,7 @@ Este repositorio complementa la tesis. El objeto academico es TenderApp: una apl
 
 ## Estado
 
-Repositorio inicializado. La estructura y el contenido compartible se incorporaran de forma curada, sin secretos, datos personales ni artefactos de compilacion.
+Repositorio curado para revision academica. El contenido se organiza mediante cinco incrementos Kanban y un paquete QA, sin secretos, datos personales ni artefactos de compilacion.
 
 ## Estructura prevista
 
@@ -16,8 +16,10 @@ Repositorio inicializado. La estructura y el contenido compartible se incorporar
 - `backend/`: API REST NestJS.
 - `supabase/`: migraciones y documentacion del esquema.
 - `docs/`: arquitectura, requisitos, decisiones y pruebas seleccionadas.
+- `docs/kanban/KANBAN-BOARD.md`: tablero Kanban de los cinco incrementos.
+- `docs/quality/QA-EXECUTION-PLAN.md`: checklist y pendientes de QA.
 - `evidence/`: capturas y resultados redactados.
-- `traceability/`: bitacoras, unidades funcionales, historias explicativas y relacion con pruebas.
+- `evidence/increment-log.md`: bitacora resumida por incremento.
 
 ## Reglas de revision
 
@@ -28,4 +30,4 @@ Repositorio inicializado. La estructura y el contenido compartible se incorporar
 
 ## Ejecucion
 
-Las instrucciones de configuracion y ejecucion se agregaran junto con la primera copia curada del codigo.
+Las instrucciones de configuracion y ejecucion se encuentran en `REVIEW-GUIDE.md` y en los README de cada componente.
